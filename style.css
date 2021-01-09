@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bangers', cursive;
+}
+
+body{
+    text-align: center;
+    background-image: url(background.png);
+}
+
+h1{
+    font-size: 35px;
+    background-image: linear-gradient(#2ecc71, #f1c40f, #3498db);
+}h1:hover{
+    transform: scale(1.10);
+    transition: transform .9s;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.quadrado{
+    width: 130px;
+    margin: 5px;
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    position: flex;
+    border: 1px solid #f5f6fa;
+    border-radius: 11px;
+    color: #eeeeee;
+    background: #eeeeee;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    cursor: pointer;
+}.quadrado:hover{
+    border: 1px solid #4cd137;
+    transform: scale(1.05);
+    transition: transform .9s;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+
+.jogador, .vencedor{
+    font-size: 25px;
+}
+
+button{
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(0.95);
+    transition: transform .9s;
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+
+    .quadrado{
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    .quadrado{
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    html {
+        font-size: 10px;
+    }
+
+    .quadrado{
+        width: 90px;
+    }
+}
